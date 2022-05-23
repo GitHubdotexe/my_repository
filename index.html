@@ -1,88 +1,158 @@
+<!--to do: add leafs favicon-->
+
 <!DOCTYPE html>
-<html>
-<title> Davide Marchese Med Student Webpage</title>
+<html lang="en">
+	<!-- Set the language. For autotranslation -->
+<meta charset="UTF-8"> 
+	<!--
+	HTML5 specification encourages use of UTF-8 character set, which
+	 covers almost all of the characters & symbols in the world-->
 
-<style>
-body {
-  background-color: linen;
-}
-h1 {
-  color: maroon;
-  margin-left: 40px;
-} 
-</style>
+<title>Med Student: Davide M's Personal Website | About David, CV and photogallery</title>
+	<!--this becomes the text in the browser tab -->
 
-  <head> 
-<h1>Davide Marchese - Year 2, West Campus Northern Ontario School of Medicine</h1>
-  </head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- EXPLAIN -->
+<link rel="stylesheet" href="Stylesheet.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<!-- Consider deleting: what is this java script for -->
 
-  <body>
-This webpage is also hosted by Davide Marchese.
+<body>
 
-<p>
-Here is myself:
-<img src="nosm_intro_photo.jpg" width="200" height="310" alt="Image cannot load">
+<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar w3-black">
+<a href="#home" class="w3-bar-item w3-button">Home</a>
+<a href="#about" class="w3-bar-item w3-button">About</a>
+<a href="#members" class="w3-bar-item w3-button">Résumé</a>
+<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<a href="#Gallery" class="w3-bar-item w3-button">Gallery</a>
+</div>
+<br />
+<br />
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+</ div>
+<!-- MOVE THE SLIDESHOW TEXT HERE SO IT GOES RIGHT UNDER THE NAV BAR -->
+
+<br />
+<br />
+Scroll down or use the naviation bar to see more.
+<br />
+This webpage is hosted and coded by Davide Marchese ©2022.
+<br />
+There is currently no other content in "Home".
+
+
+<!-- UN COMMENT THIS OUT LATER. Also, images are not going nicely to edges
+<img class="slides" src="elite_smash_first.jpg" width="100%">
+<img class="slides" src="nosm_intro_photo.jpg" width="100%">
+<img class="slides" src="Thunder_driving.PNG" width="100%">
+<script>
+w3.slideshow(".slides", 1500);
+</script>
+-->
+
+<!-- About -->
+<div id="about" class="w3-container w3-padding-32">
+
+<h1 class="w3-center w3-black">Davide Marchese - Year 2 Medical Student</h1>
+<h3 class="w3-center w3-light-gray"> NOSM University, West Campus - Thunder Bay</h3>
+	<!-- This becomes the 'title' of the about section-->
+	<!-- Really title = heading1 = <h1> -->
+<p class="w3-container w3-left w3-padding-12"> About Myself: </p>
+<br />
+<p class="w3-left"> Hi there! If you're reading this, you obviously have some connection to who I am. 
+However we met I want to express my happiness that we crossed paths. But you came here for more info. 
+SO, allow me to tell you about myself.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<!-- Resume-->
+<div id="Résumé" class="w3-container w3-padding-32">
+<h2 class="w3-center">Résumé</h2>
+<div class="w3-row w3-center">
+
+<div class="w3-third">
+<!--
+<img src="img_bandmember.jpg" alt="Image Improperly Displayed" style="width:60%">
+-->
+Resume available 
+<a href="test_file.zip" download>here</a>
+</div>
+
+<div class="w3-third">
+<!--
+<img src="img_bandmember.jpg" alt="Image Improperly Displayed" style="width:60%">
+-->
+<a href="elite_smash_first.jpg" download>CV available here</a>
+</div>
+
+<div class="w3-third">
+<!--
+<img src="img_bandmember.jpg" alt="Image Improperly Displayed" style="width:60%">
+-->
+Connect with me on 
+<a href="https://www.youtube.com/watch?v=iik25wqIuFo" title="Definitely not a Rick Roll" target="_blank">LinkedIn</a> ! 
+<br />
+<p style="color:grey">Just kidding! I don't have that.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="w3-container w3-center w3-padding-32">
+<h2 class="w3-wide">Contact</h2>
+Thunder Bay, ON<br>
+Phone: 807 630 2287<br>
+Email: dmarchese@nosm.ca<br>
+<p class="w3-opacity w3-center"><i><b>Have Comments? Email Me!</i></b>
+<br />
+One day if I learn how to code in PHP, I may add a fillable contact form directly to this webpage.
+<br />
+Saving the user message is non-trivial.
 </p>
-<p>
-Here is my buddy, chess master Dan:
-</p>
-<p>    
-<img src="IMG_6551.JPG" width=50% alt="Image cannot load">
-</p>
-<p>
-Hi There!
-</p>
-<p>
-I am the host of this webpage, and my full name is above. I go by David instead of Davide to keep it simple. "Davide" is pronouced (Da.veed), it is a name of French origin; is very common in Europe. I myself am of Italian ethnicity. The name was passed on to me in order to honour my grandfather, who was also Davide Marchese. As was his grandfather. Likewise, my father Stefano, was named after his grandfather, and so on. 
-</p>
 
-<p>
-But enough of the fun facts! Check out the tabs below to navigate to your area of interest. 
-</p>
-<p>
-Here is a list for my own knowledge. Since this is a demo I'll be using this as code to copy paste
-</p> 
+<!-- 
+<form action="/action_page.php" target="_blank">
+<input class="w3-input" type="text" placeholder="Name" required name="Name">
+<input class="w3-input" type="text" placeholder="Email" required name="Email">
+<input class="w3-input" type="text" placeholder="Your Message" required name="Message"><br>
+<button class="w3-button w3-black" type="submit">SEND</button>
+</form>
+-->
 
-<ul>
-<li> About Me
-</li>
+<!-- TO try fixing contact form
+	Good vid with public source code and explanations:
+		https://www.youtube.com/watch?v=OHjkg_rifTw
+		https://www.youtube.com/watch?v=qm4Eih_2p-M
+You have to 
+1. make a database with MySQL
+2. connect MYSQL database to website with PHP
+3. do checks on entry and find way to save data
+-->
 
-<li> Curriculum Vitae
-</li>
-
-<li> Interests and Hobbies
-</li>
-
-<li> Gallery
-</li>
-
-<li> Contact Me
-</li>
-  <li> How to play the jynx game
-</li>
-</ul>
-
-<p>
-<img src="Thunder_driving.PNG" style="width:60%" alt="Image cannot load">
-</p>
-This image was captured by my dash-cam. It doesn't Thunder&Lightning like you'd think in "Thunder Bay" but this is strill a great shot. 
-
-<p>
-Here is a great song about my hometown, Thunder Bay. 
+<!-- Gallery -->
+<div id="Gallery" class="w3-container w3-center w3-padding-32">
+<h2 class="w3-wide">Gallery</h2>
+No Pictures Yet.<br>
+Stay Tuned!<br>
+<br>
+<p class="w3-opacity w3-center">
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mrqg1oqfg_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>
-  How to play the Jynx Game:
-  </p>
-   <p> 1. Say a word or phrase at the exact moment sombody else says the aforemetioned word </p>
-    <p> 2. They can no longer talk until the curse is broken. </p>
-    <BLOCKQUOTE>
-    <p. tab { text-indent: 25% }>   i)to break a curse, 2021 edition, say their name 10 times</p>
-    <p.tab { text-indent:25% }> 
-      ii) make sure your pronounce their name correctly, or else they may not be able to talk</p>
-      <p .tab { text-indent: 25% }>  iii) for the 2022 edition, use their name in a meanignful way, such as in a sentence, (ten times). Don't just spam it. </p>
-   </BLOCKQUOTE>
-      <p> MORE TO COME. STAY TUNED!
- </body>
+<br>
+<img src="map.jpg" class="w3-image" style="width:100%">
+<p class="w3-center w3-padding">
+How to insert hyperlink w new name  
+<a href="https://www.youtube.com" title="HOVER OVER TEXT" target="_blank">HYPERLINK_TEXT</a>
+</p>
+</div>
+
+<!-- End Content -->
+</div>
+
+</body>
 </html>
