@@ -63,9 +63,18 @@ w3.slideshow(".slides", 2000);
 <br />
 <img src="nosm_intro_photo.jpg" width="200" height="310" alt="Shown when image cannot load">
 <p class="w3-left"> Hey! If you're reading this, you obviously have some connection to who I am. 
-However we met I want to express my happiness that we crossed paths. But you came here for more info. 
-SO, allow me to tell you about myself. I am a medical student who is passionate about hockey, soccer, technology, math, and science. 
-Some of my hobbies include video games, particularly Super Smash Bros. As well, I enjoy passing time with my partner and our dog, Malibu.
+However we met I want to express my happiness that we crossed paths. But you came here for more info. SO, allow me to tell you about myself. 
+.hide {
+  display: none;
+}
+.myDIV:hover + .hide {
+  display: block;
+  color: blue;
+}
+	<div class="myDIV"> I am a medical student who is passionate about hockey, soccer, technology, math, and science. 
+Some of my hobbies include video games, particularly Super Smash Bros. As well, I enjoy passing time with my partner and our dog, Malibu. </div>
+<div class="hide"> Can you guess my favourite team? I've hidden an Easter Egg somewhere on this webpage. Nobody has found it yet.</div>	
+
 <br />
 <br />
 Malibu is named after one of my father's past vehicles. This is a cogntive method designed to associate new material with my father's long-term memory.  
